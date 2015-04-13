@@ -1,0 +1,14 @@
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajan Studio.csprojResolveAssemblyReference.cache
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajan Studio.csproj.ResolveComReference.cache
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.BhajanForm.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.BhajansForm.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.Properties.Resources.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.ScaleForm.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.Form1.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajans.ListForm.resources
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajan Studio.csproj.GenerateResource.Cache
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\bin\Debug\Bhajan Studio.exe.config
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\bin\Debug\Bhajan Studio.exe
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\bin\Debug\Bhajan Studio.pdb
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajan Studio.exe
+C:\Users\owner\Documents\Visual Studio 2013\Projects\Bhajan Studio\Bhajan Studio\obj\Debug\Bhajan Studio.pdb

@@ -1,0 +1,77 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Bhajans.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sai_bhajans5ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Database\sai_bhajans5.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Database\sai_bhajans5.mdb</Value>
+    </Setting>
+    <Setting Name="InsertBeforeOrAfter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Before</Value>
+    </Setting>
+    <Setting Name="ReferenceSlideIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="TitleTextBoxIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="BodyTextBoxIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BhajanNumberTextBoxIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="NextBhajanTextBoxIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="TranslationTextBoxIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="TitleTextBoxCharacteristics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimensions=25:25:675:75,Font=Constantia:40:bold,Color=204:255:204</Value>
+    </Setting>
+    <Setting Name="BodyTextBoxCharacteristics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimensions=25:100:675:300,Font=Constantia:26:bold,Color=204:255:204</Value>
+    </Setting>
+    <Setting Name="TranslationTextBoxCharacteristics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimensions=25:400:675:100,Font=Constantia:16,Color=204:255:204</Value>
+    </Setting>
+    <Setting Name="BhajanNumberTextBoxCharacteristics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimensions=25:500:40:20,Font=Constantia:18,Color=204:255:204</Value>
+    </Setting>
+    <Setting Name="NextBhajanTextBoxCharacteristics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dimensions=400:500:300:20,Font=Constantia:18,Color=204:255:204</Value>
+    </Setting>
+    <Setting Name="UseReferenceSlide" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SongsFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Songs</Value>
+    </Setting>
+    <Setting Name="OutputFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bhajans</Value>
+    </Setting>
+    <Setting Name="PowerPointTemplateLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Template\Bhajans.ppt</Value>
+    </Setting>
+    <Setting Name="BhajanStartsWithFlag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SearchTitleOnlyFlag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HideRowsWithEmptyScalesFlag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PowerPointEmptyTemplateLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Template\BhajansEmpty.ppt</Value>
+    </Setting>
+    <Setting Name="NextBhajanFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Next: (%scale%) %leader%-%title%</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

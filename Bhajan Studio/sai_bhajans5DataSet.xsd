@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sai_bhajans5DataSet" targetNamespace="http://tempuri.org/sai_bhajans5DataSet.xsd" xmlns:mstns="http://tempuri.org/sai_bhajans5DataSet.xsd" xmlns="http://tempuri.org/sai_bhajans5DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sai_bhajans5ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sai_bhajans5ConnectionString (Settings)" PropertyReference="ApplicationSettings.Bhajans.Properties.Settings.GlobalReference.Default.sai_bhajans5ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LanguageQueryTableAdapter" GeneratorDataComponentClassName="LanguageQueryTableAdapter" Name="LanguageQuery" UserDataComponentName="LanguageQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="LanguageQuery" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Language] FROM LanguageQuery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Language" DataSetColumn="Language" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LordNameQueryTableAdapter" GeneratorDataComponentClassName="LordNameQueryTableAdapter" Name="LordNameQuery" UserDataComponentName="LordNameQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="LordNameQuery" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT LordName FROM LordNameQuery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LordName" DataSetColumn="LordName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BhajansTableAdapter" GeneratorDataComponentClassName="BhajansTableAdapter" Name="Bhajans" UserDataComponentName="BhajansTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `Bhajans` WHERE ((`Bhajan ID` = ?) AND ((? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `LordName` IS NULL) OR (`LordName` = ?)) AND ((? = 1 AND `Language` IS NULL) OR (`Language` = ?)) AND ((? = 1 AND `LangCategory` IS NULL) OR (`LangCategory` = ?)) AND ((? = 1 AND `PrintNow` IS NULL) OR (`PrintNow` = ?)) AND ((? = 1 AND `SongFile` IS NULL) OR (`SongFile` = ?)) AND ((? = 1 AND `Keywords` IS NULL) OR (`Keywords` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Bhajan_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Bhajan ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Title" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Title" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LordName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_LordName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Language" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Language" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LangCategory" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_LangCategory" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PrintNow" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_PrintNow" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SongFile" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_SongFile" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Keywords" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Keywords" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `Bhajans` (`Title`, `Body`, `Translation`, `LordName`, `Language`, `LangCategory`, `PrintNow`, `SongFile`, `Keywords`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Title" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Body" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="Body" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Translation" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="Translation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="LordName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Language" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="LangCategory" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="PrintNow" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="SongFile" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Keywords" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Title, Body, [Translation], LordName, [Language], LangCategory, PrintNow, SongFile, Keywords
+FROM Bhajans
+ORDER BY Title</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `Bhajans` SET `Title` = ?, `Body` = ?, `Translation` = ?, `LordName` = ?, `Language` = ?, `LangCategory` = ?, `PrintNow` = ?, `SongFile` = ?, `Keywords` = ? WHERE ((`Bhajan ID` = ?) AND ((? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `LordName` IS NULL) OR (`LordName` = ?)) AND ((? = 1 AND `Language` IS NULL) OR (`Language` = ?)) AND ((? = 1 AND `LangCategory` IS NULL) OR (`LangCategory` = ?)) AND ((? = 1 AND `PrintNow` IS NULL) OR (`PrintNow` = ?)) AND ((? = 1 AND `SongFile` IS NULL) OR (`SongFile` = ?)) AND ((? = 1 AND `Keywords` IS NULL) OR (`Keywords` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Title" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Body" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="Body" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Translation" Precision="0" ProviderType="LongVarWChar" Scale="0" Size="0" SourceColumn="Translation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="LordName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Language" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="LangCategory" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="PrintNow" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="SongFile" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Keywords" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_Bhajan_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Bhajan ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Title" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Title" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LordName" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_LordName" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LordName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Language" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Language" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Language" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LangCategory" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_LangCategory" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="LangCategory" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PrintNow" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="Original_PrintNow" Precision="0" ProviderType="Boolean" Scale="0" Size="0" SourceColumn="PrintNow" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SongFile" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_SongFile" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="SongFile" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Keywords" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Keywords" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Keywords" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Bhajan ID" DataSetColumn="Bhajan ID" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Body" DataSetColumn="Body" />
+              <Mapping SourceColumn="Translation" DataSetColumn="Translation" />
+              <Mapping SourceColumn="LordName" DataSetColumn="LordName" />
+              <Mapping SourceColumn="Language" DataSetColumn="Language" />
+              <Mapping SourceColumn="LangCategory" DataSetColumn="LangCategory" />
+              <Mapping SourceColumn="PrintNow" DataSetColumn="PrintNow" />
+              <Mapping SourceColumn="SongFile" DataSetColumn="SongFile" />
+              <Mapping SourceColumn="Keywords" DataSetColumn="Keywords" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteByBhajanID" Modifier="Public" Name="DeleteByBhajanID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteByBhajanID">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM `Bhajans` WHERE (`Bhajan ID` = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="Bhajan ID" DataSourceName="Bhajans" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Bhajan_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Bhajan ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByBhajanID" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBhajanID" GeneratorSourceName="FillByBhajanID" GetMethodModifier="Public" GetMethodName="GetDataByBhajanID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBhajanID" UserSourceName="FillByBhajanID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Body, Keywords, LangCategory, [Language], LordName, PrintNow, SongFile, Title, [Translation] FROM Bhajans WHERE ([Bhajan ID] = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="Bhajan ID" DataSourceName="Bhajans" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Bhajan_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Bhajan ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchText1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySearchText1" GeneratorSourceName="FillBySearchText1" GetMethodModifier="Public" GetMethodName="GetDataBySearchText1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySearchText1" UserSourceName="FillBySearchText1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Body, Keywords, LangCategory, [Language], LordName, PrintNow, SongFile, Title, [Translation] FROM Bhajans WHERE (LCASE(Title) LIKE '%' &amp; LCASE(?) &amp; '%') OR (LCASE(Body) LIKE '%' &amp; LCASE(?) &amp; '%') OR (LCASE(LordName) LIKE '%' &amp; LCASE(?) &amp; '%') OR (LCASE([Language]) LIKE '%' &amp; LCASE(?) &amp; '%') OR (LCASE(Keywords) LIKE '%' &amp; LCASE(?) &amp; '%') ORDER BY Title</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param1" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param2" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param3" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param4" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param5" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param5" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchText2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySearchText2" GeneratorSourceName="FillBySearchText2" GetMethodModifier="Public" GetMethodName="GetDataBySearchText2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySearchText2" UserSourceName="FillBySearchText2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Body, Keywords, LangCategory, [Language], LordName, PrintNow, SongFile, Title, [Translation] FROM Bhajans WHERE (LCASE(Title) LIKE LCASE(?) &amp; '%') OR (LCASE(Body) LIKE LCASE(?) &amp; '%') OR (LCASE(LordName) LIKE LCASE(?) &amp; '%') OR (LCASE([Language]) LIKE LCASE(?) &amp; '%') OR (LCASE(Keywords) LIKE LCASE(?) &amp; '%') ORDER BY Title</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param1" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param2" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param3" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param4" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param5" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param5" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchText3" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySearchText3" GeneratorSourceName="FillBySearchText3" GetMethodModifier="Public" GetMethodName="GetDataBySearchText3" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySearchText3" UserSourceName="FillBySearchText3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Body, Keywords, LangCategory, [Language], LordName, PrintNow, SongFile, Title, [Translation] FROM Bhajans WHERE (LCASE(Title) LIKE '%' &amp; LCASE(?) &amp; '%') ORDER BY Title</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param1" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="Bhajans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchText4" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySearchText4" GeneratorSourceName="FillBySearchText4" GetMethodModifier="Public" GetMethodName="GetDataBySearchText4" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySearchText4" UserSourceName="FillBySearchText4">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Bhajan ID], Body, Keywords, LangCategory, [Language], LordName, PrintNow, SongFile, Title, [Translation] FROM Bhajans WHERE (LCASE(Title) LIKE LCASE(?) &amp; '%') ORDER BY Title</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Param1" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateByBhajanID" Modifier="Public" Name="UpdateByBhajanID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateByBhajanID">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE `Bhajans` SET `Title` = ?, `Body` = ?, `Translation` = ?, `LordName` = ?, `Language` = ?, `LangCategory` = ?, `PrintNow` = ?, `SongFile` = ?, Keywords = ? WHERE (`Bhajan ID` = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="Title" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="Title" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="Title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="Body" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength" DbType="String" Direction="Input" ParameterName="Body" Precision="0" ProviderType="WChar" Scale="0" Size="1024" SourceColumn="Body" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="Translation" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength" DbType="String" Direction="Input" ParameterName="Translation" Precision="0" ProviderType="WChar" Scale="0" Size="1024" SourceColumn="Translation" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param4" ColumnName="LordName" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(50)" DbType="String" Direction="Input" ParameterName="LordName" Precision="0" ProviderType="WChar" Scale="0" Size="50" SourceColumn="LordName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param5" ColumnName="Language" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(50)" DbType="String" Direction="Input" ParameterName="Language" Precision="0" ProviderType="WChar" Scale="0" Size="50" SourceColumn="Language" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param6" ColumnName="LangCategory" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(50)" DbType="String" Direction="Input" ParameterName="LangCategory" Precision="0" ProviderType="WChar" Scale="0" Size="50" SourceColumn="LangCategory" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param7" ColumnName="PrintNow" DataSourceName="Bhajans" DataTypeServer="DbType.Boolean(2)" DbType="Boolean" Direction="Input" ParameterName="PrintNow" Precision="0" ProviderType="Boolean" Scale="0" Size="2" SourceColumn="PrintNow" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="SongFile" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(128)" DbType="String" Direction="Input" ParameterName="SongFile" Precision="0" ProviderType="WChar" Scale="0" Size="128" SourceColumn="SongFile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param9" ColumnName="Keywords" DataSourceName="Bhajans" DataTypeServer="DbType.StringFixedLength(255)" DbType="String" Direction="Input" ParameterName="Keywords" Precision="0" ProviderType="WChar" Scale="0" Size="255" SourceColumn="Keywords" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param10" ColumnName="Bhajan ID" DataSourceName="Bhajans" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="Original_Bhajan_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Bhajan ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LanguageCategoryQueryTableAdapter" GeneratorDataComponentClassName="LanguageCategoryQueryTableAdapter" Name="LanguageCategoryQuery" UserDataComponentName="LanguageCategoryQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="LanguageCategoryQuery" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT LangCategory FROM LanguageCategoryQuery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LangCategory" DataSetColumn="LangCategory" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BhajanScalesTableAdapter" GeneratorDataComponentClassName="BhajanScalesTableAdapter" Name="BhajanScales" UserDataComponentName="BhajanScalesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanScales" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `BhajanScales` WHERE ((`ID` = ?) AND ((? = 1 AND `BhajanID` IS NULL) OR (`BhajanID` = ?)) AND ((? = 1 AND `BhajanLeaderID` IS NULL) OR (`BhajanLeaderID` = ?)) AND ((? = 1 AND `Scale` IS NULL) OR (`Scale` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Scale" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Scale" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `BhajanScales` (`BhajanID`, `BhajanLeaderID`, `Scale`) VALUES (?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Scale" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, BhajanID, BhajanLeaderID, Scale FROM BhajanScales</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `BhajanScales` SET `BhajanID` = ?, `BhajanLeaderID` = ?, `Scale` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `BhajanID` IS NULL) OR (`BhajanID` = ?)) AND ((? = 1 AND `BhajanLeaderID` IS NULL) OR (`BhajanLeaderID` = ?)) AND ((? = 1 AND `Scale` IS NULL) OR (`Scale` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Scale" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Scale" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Scale" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Scale" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="BhajanID" DataSetColumn="BhajanID" />
+              <Mapping SourceColumn="BhajanLeaderID" DataSetColumn="BhajanLeaderID" />
+              <Mapping SourceColumn="Scale" DataSetColumn="Scale" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteByID" Modifier="Public" Name="DeleteByID" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteByID">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM `BhajanScales` WHERE (`ID` = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="ID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="ID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanScales" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="GetID" Modifier="Public" Name="GetID" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="GetID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID
+FROM BhajanScales
+WHERE BhajanID = ?
+AND BhajanLeaderID = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="BhajanID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="BhajanLeaderID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanScales" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="GetScale" Modifier="Public" Name="GetScale" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="GetScale">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Scale FROM BhajanScales
+WHERE BhajanID = ?
+AND BhajanLeaderID = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="BhajanID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="BhajanLeaderID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BhajanLeadersQueryTableAdapter" GeneratorDataComponentClassName="BhajanLeadersQueryTableAdapter" Name="BhajanLeadersQuery" UserDataComponentName="BhajanLeadersQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanLeadersQuery" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name FROM BhajanLeadersQuery</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BhajanLeadersTableAdapter" GeneratorDataComponentClassName="BhajanLeadersTableAdapter" Name="BhajanLeaders" UserDataComponentName="BhajanLeadersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanLeaders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `BhajanLeaders` WHERE ((`BhajanLeaderID` = ?) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Name" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `BhajanLeaders` (`Name`) VALUES (?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT BhajanLeaderID, Name FROM BhajanLeaders ORDER BY Name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `BhajanLeaders` SET `Name` = ? WHERE ((`BhajanLeaderID` = ?) AND ((? = 1 AND `Name` IS NULL) OR (`Name` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Name" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Name" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BhajanLeaderID" DataSetColumn="BhajanLeaderID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanLeaders" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetIDByName" Modifier="Public" Name="GetIDByName" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetIDByName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT BhajanLeaderID
+FROM BhajanLeaders
+WHERE Name = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="Name" DataSourceName="BhajanLeaders" DataTypeServer="DbType.StringFixedLength(100)" DbType="String" Direction="Input" ParameterName="Name" Precision="0" ProviderType="WChar" Scale="0" Size="100" SourceColumn="Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectName="BhajanLeaders" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="GetNameByID" Modifier="Public" Name="GetNameByID" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="GetNameByID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Name FROM BhajanLeaders WHERE BhajanLeaderID = ?</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="BhajanLeaderID" DataSourceName="BhajanLeaders" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BhajanScalesQueryTableAdapter" GeneratorDataComponentClassName="BhajanScalesQueryTableAdapter" Name="BhajanScalesQuery" UserDataComponentName="BhajanScalesQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     A.BhajanLeaderID, A.Name, B.Scale
+FROM         (BhajanLeaders A LEFT OUTER JOIN
+                          (SELECT     X.BhajanLeaderID, X.Name, Y.Scale
+                            FROM          (BhajanLeaders X LEFT OUTER JOIN
+                                                   BhajanScales Y ON Y.BhajanLeaderID = X.BhajanLeaderID)
+                            WHERE      (Y.BhajanID = ?)) B ON B.BhajanLeaderID = A.BhajanLeaderID)
+WHERE     (LCASE(A.Name) LIKE '%' &amp; LCASE(?) &amp; '%')
+ORDER BY A.Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="" DataSourceName="" DataTypeServer="DbType.Int32" DbType="AnsiString" Direction="Input" ParameterName="Search" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BhajanLeaderID" DataSetColumn="BhajanLeaderID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Scale" DataSetColumn="Scale" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData2" GeneratorSourceName="Fill2" GetMethodModifier="Public" GetMethodName="GetData2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData2" UserSourceName="Fill2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     A.BhajanLeaderID, B.Name, A.Scale
+FROM         (BhajanScales A INNER JOIN
+                      BhajanLeaders B ON A.BhajanLeaderID = B.BhajanLeaderID)
+WHERE     (A.BhajanID = ?) AND (LCASE(B.Name) LIKE '%' &amp; LCASE(?) &amp; '%')
+ORDER BY B.Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="BhajanID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="AnsiString" Direction="Input" ParameterName="Search" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AllScalesQueryTableAdapter" GeneratorDataComponentClassName="AllScalesQueryTableAdapter" Name="AllScalesQuery" UserDataComponentName="AllScalesQueryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT    A.Scale, C.Title, B.Name
+FROM      ((BhajanScales A INNER JOIN
+                   BhajanLeaders B ON A.BhajanLeaderID = B.BhajanLeaderID) INNER JOIN
+                   Bhajans C ON A.BhajanID = C.[Bhajan ID])
+WHERE    (A.BhajanLeaderID = ?)
+ORDER BY A.Scale, C.Title, B.Name</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="BhajanLeaderID" DataSourceName="BhajanScales" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="BhajanLeaderID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="BhajanLeaderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Scale" DataSetColumn="Scale" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="sai_bhajans5ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByAll" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAll" GeneratorSourceName="FillByAll" GetMethodModifier="Public" GetMethodName="GetDataByAll" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAll" UserSourceName="FillByAll">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT    A.Scale, C.Title, B.Name
+FROM      ((BhajanScales A INNER JOIN
+                   BhajanLeaders B ON A.BhajanLeaderID = B.BhajanLeaderID) INNER JOIN
+                   Bhajans C ON A.BhajanID = C.[Bhajan ID])
+ORDER BY A.Scale, C.Title, B.Name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sai_bhajans5DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sai_bhajans5DataSet" msprop:Generator_UserDSName="sai_bhajans5DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LanguageQuery" msprop:Generator_UserTableName="LanguageQuery" msprop:Generator_RowEvArgName="LanguageQueryRowChangeEvent" msprop:Generator_TableVarName="tableLanguageQuery" msprop:Generator_TablePropName="LanguageQuery" msprop:Generator_RowDeletingName="LanguageQueryRowDeleting" msprop:Generator_RowChangingName="LanguageQueryRowChanging" msprop:Generator_RowDeletedName="LanguageQueryRowDeleted" msprop:Generator_RowEvHandlerName="LanguageQueryRowChangeEventHandler" msprop:Generator_TableClassName="LanguageQueryDataTable" msprop:Generator_RowChangedName="LanguageQueryRowChanged" msprop:Generator_RowClassName="LanguageQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Language" msprop:Generator_ColumnVarNameInTable="columnLanguage" msprop:Generator_ColumnPropNameInRow="Language" msprop:Generator_ColumnPropNameInTable="LanguageColumn" msprop:Generator_UserColumnName="Language" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LordNameQuery" msprop:Generator_UserTableName="LordNameQuery" msprop:Generator_RowEvArgName="LordNameQueryRowChangeEvent" msprop:Generator_TableVarName="tableLordNameQuery" msprop:Generator_TablePropName="LordNameQuery" msprop:Generator_RowDeletingName="LordNameQueryRowDeleting" msprop:Generator_RowChangingName="LordNameQueryRowChanging" msprop:Generator_RowDeletedName="LordNameQueryRowDeleted" msprop:Generator_RowEvHandlerName="LordNameQueryRowChangeEventHandler" msprop:Generator_TableClassName="LordNameQueryDataTable" msprop:Generator_RowChangedName="LordNameQueryRowChanged" msprop:Generator_RowClassName="LordNameQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LordName" msprop:Generator_ColumnVarNameInTable="columnLordName" msprop:Generator_ColumnPropNameInRow="LordName" msprop:Generator_ColumnPropNameInTable="LordNameColumn" msprop:Generator_UserColumnName="LordName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bhajans" msprop:Generator_UserTableName="Bhajans" msprop:Generator_RowEvArgName="BhajansRowChangeEvent" msprop:Generator_TableVarName="tableBhajans" msprop:Generator_TablePropName="Bhajans" msprop:Generator_RowDeletingName="BhajansRowDeleting" msprop:Generator_RowChangingName="BhajansRowChanging" msprop:Generator_RowDeletedName="BhajansRowDeleted" msprop:Generator_RowEvHandlerName="BhajansRowChangeEventHandler" msprop:Generator_TableClassName="BhajansDataTable" msprop:Generator_RowChangedName="BhajansRowChanged" msprop:Generator_RowClassName="BhajansRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Bhajan_x0020_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBhajan_ID" msprop:Generator_ColumnPropNameInRow="Bhajan_ID" msprop:Generator_ColumnPropNameInTable="Bhajan_IDColumn" msprop:Generator_UserColumnName="Bhajan ID" type="xs:int" />
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Body" msprop:Generator_ColumnVarNameInTable="columnBody" msprop:Generator_ColumnPropNameInRow="Body" msprop:Generator_ColumnPropNameInTable="BodyColumn" msprop:Generator_UserColumnName="Body" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Translation" msprop:Generator_ColumnVarNameInTable="columnTranslation" msprop:Generator_ColumnPropNameInRow="Translation" msprop:Generator_ColumnPropNameInTable="TranslationColumn" msprop:Generator_UserColumnName="Translation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LordName" msprop:Generator_ColumnVarNameInTable="columnLordName" msprop:Generator_ColumnPropNameInRow="LordName" msprop:Generator_ColumnPropNameInTable="LordNameColumn" msprop:Generator_UserColumnName="LordName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Language" msprop:Generator_ColumnVarNameInTable="columnLanguage" msprop:Generator_ColumnPropNameInRow="Language" msprop:Generator_ColumnPropNameInTable="LanguageColumn" msprop:Generator_UserColumnName="Language" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LangCategory" msprop:Generator_ColumnVarNameInTable="columnLangCategory" msprop:Generator_ColumnPropNameInRow="LangCategory" msprop:Generator_ColumnPropNameInTable="LangCategoryColumn" msprop:Generator_UserColumnName="LangCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrintNow" msprop:Generator_ColumnVarNameInTable="columnPrintNow" msprop:Generator_ColumnPropNameInRow="PrintNow" msprop:Generator_ColumnPropNameInTable="PrintNowColumn" msprop:Generator_UserColumnName="PrintNow" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SongFile" msprop:Generator_ColumnVarNameInTable="columnSongFile" msprop:Generator_ColumnPropNameInRow="SongFile" msprop:Generator_ColumnPropNameInTable="SongFileColumn" msprop:Generator_UserColumnName="SongFile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Keywords" msprop:Generator_ColumnVarNameInTable="columnKeywords" msprop:Generator_ColumnPropNameInRow="Keywords" msprop:Generator_ColumnPropNameInTable="KeywordsColumn" msprop:Generator_UserColumnName="Keywords" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LanguageCategoryQuery" msprop:Generator_UserTableName="LanguageCategoryQuery" msprop:Generator_RowEvArgName="LanguageCategoryQueryRowChangeEvent" msprop:Generator_TableVarName="tableLanguageCategoryQuery" msprop:Generator_TablePropName="LanguageCategoryQuery" msprop:Generator_RowDeletingName="LanguageCategoryQueryRowDeleting" msprop:Generator_RowChangingName="LanguageCategoryQueryRowChanging" msprop:Generator_RowDeletedName="LanguageCategoryQueryRowDeleted" msprop:Generator_RowEvHandlerName="LanguageCategoryQueryRowChangeEventHandler" msprop:Generator_TableClassName="LanguageCategoryQueryDataTable" msprop:Generator_RowChangedName="LanguageCategoryQueryRowChanged" msprop:Generator_RowClassName="LanguageCategoryQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LangCategory" msprop:Generator_ColumnVarNameInTable="columnLangCategory" msprop:Generator_ColumnPropNameInRow="LangCategory" msprop:Generator_ColumnPropNameInTable="LangCategoryColumn" msprop:Generator_UserColumnName="LangCategory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BhajanScales" msprop:Generator_UserTableName="BhajanScales" msprop:Generator_RowEvArgName="BhajanScalesRowChangeEvent" msprop:Generator_TableVarName="tableBhajanScales" msprop:Generator_TablePropName="BhajanScales" msprop:Generator_RowDeletingName="BhajanScalesRowDeleting" msprop:Generator_RowChangingName="BhajanScalesRowChanging" msprop:Generator_RowDeletedName="BhajanScalesRowDeleted" msprop:Generator_RowEvHandlerName="BhajanScalesRowChangeEventHandler" msprop:Generator_TableClassName="BhajanScalesDataTable" msprop:Generator_RowChangedName="BhajanScalesRowChanged" msprop:Generator_RowClassName="BhajanScalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="BhajanID" msprop:Generator_ColumnVarNameInTable="columnBhajanID" msprop:Generator_ColumnPropNameInRow="BhajanID" msprop:Generator_ColumnPropNameInTable="BhajanIDColumn" msprop:Generator_UserColumnName="BhajanID" type="xs:int" minOccurs="0" />
+              <xs:element name="BhajanLeaderID" msprop:Generator_ColumnVarNameInTable="columnBhajanLeaderID" msprop:Generator_ColumnPropNameInRow="BhajanLeaderID" msprop:Generator_ColumnPropNameInTable="BhajanLeaderIDColumn" msprop:Generator_UserColumnName="BhajanLeaderID" type="xs:int" minOccurs="0" />
+              <xs:element name="Scale" msprop:Generator_ColumnVarNameInTable="columnScale" msprop:Generator_ColumnPropNameInRow="Scale" msprop:Generator_ColumnPropNameInTable="ScaleColumn" msprop:Generator_UserColumnName="Scale" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BhajanLeadersQuery" msprop:Generator_UserTableName="BhajanLeadersQuery" msprop:Generator_RowEvArgName="BhajanLeadersQueryRowChangeEvent" msprop:Generator_TableVarName="tableBhajanLeadersQuery" msprop:Generator_TablePropName="BhajanLeadersQuery" msprop:Generator_RowDeletingName="BhajanLeadersQueryRowDeleting" msprop:Generator_RowChangingName="BhajanLeadersQueryRowChanging" msprop:Generator_RowDeletedName="BhajanLeadersQueryRowDeleted" msprop:Generator_RowEvHandlerName="BhajanLeadersQueryRowChangeEventHandler" msprop:Generator_TableClassName="BhajanLeadersQueryDataTable" msprop:Generator_RowChangedName="BhajanLeadersQueryRowChanged" msprop:Generator_RowClassName="BhajanLeadersQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BhajanLeaders" msprop:Generator_UserTableName="BhajanLeaders" msprop:Generator_RowEvArgName="BhajanLeadersRowChangeEvent" msprop:Generator_TableVarName="tableBhajanLeaders" msprop:Generator_TablePropName="BhajanLeaders" msprop:Generator_RowDeletingName="BhajanLeadersRowDeleting" msprop:Generator_RowChangingName="BhajanLeadersRowChanging" msprop:Generator_RowDeletedName="BhajanLeadersRowDeleted" msprop:Generator_RowEvHandlerName="BhajanLeadersRowChangeEventHandler" msprop:Generator_TableClassName="BhajanLeadersDataTable" msprop:Generator_RowChangedName="BhajanLeadersRowChanged" msprop:Generator_RowClassName="BhajanLeadersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BhajanLeaderID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBhajanLeaderID" msprop:Generator_ColumnPropNameInRow="BhajanLeaderID" msprop:Generator_ColumnPropNameInTable="BhajanLeaderIDColumn" msprop:Generator_UserColumnName="BhajanLeaderID" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BhajanScalesQuery" msprop:Generator_UserTableName="BhajanScalesQuery" msprop:Generator_RowEvArgName="BhajanScalesQueryRowChangeEvent" msprop:Generator_TableVarName="tableBhajanScalesQuery" msprop:Generator_TablePropName="BhajanScalesQuery" msprop:Generator_RowDeletingName="BhajanScalesQueryRowDeleting" msprop:Generator_RowChangingName="BhajanScalesQueryRowChanging" msprop:Generator_RowDeletedName="BhajanScalesQueryRowDeleted" msprop:Generator_RowEvHandlerName="BhajanScalesQueryRowChangeEventHandler" msprop:Generator_TableClassName="BhajanScalesQueryDataTable" msprop:Generator_RowChangedName="BhajanScalesQueryRowChanged" msprop:Generator_RowClassName="BhajanScalesQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BhajanLeaderID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBhajanLeaderID" msprop:Generator_ColumnPropNameInRow="BhajanLeaderID" msprop:Generator_ColumnPropNameInTable="BhajanLeaderIDColumn" msprop:Generator_UserColumnName="BhajanLeaderID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Scale" msprop:Generator_ColumnVarNameInTable="columnScale" msprop:Generator_ColumnPropNameInRow="Scale" msprop:Generator_ColumnPropNameInTable="ScaleColumn" msprop:Generator_UserColumnName="Scale" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AllScalesQuery" msprop:Generator_UserTableName="AllScalesQuery" msprop:Generator_RowEvArgName="AllScalesQueryRowChangeEvent" msprop:Generator_TableVarName="tableAllScalesQuery" msprop:Generator_TablePropName="AllScalesQuery" msprop:Generator_RowDeletingName="AllScalesQueryRowDeleting" msprop:Generator_RowChangingName="AllScalesQueryRowChanging" msprop:Generator_RowDeletedName="AllScalesQueryRowDeleted" msprop:Generator_RowEvHandlerName="AllScalesQueryRowChangeEventHandler" msprop:Generator_TableClassName="AllScalesQueryDataTable" msprop:Generator_RowChangedName="AllScalesQueryRowChanged" msprop:Generator_RowClassName="AllScalesQueryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Scale" msprop:Generator_ColumnVarNameInTable="columnScale" msprop:Generator_ColumnPropNameInRow="Scale" msprop:Generator_ColumnPropNameInTable="ScaleColumn" msprop:Generator_UserColumnName="Scale" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Bhajans" />
+      <xs:field xpath="mstns:Bhajan_x0020_ID" />
+    </xs:unique>
+    <xs:unique name="BhajanScales_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BhajanScales" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="BhajanLeaders_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BhajanLeaders" />
+      <xs:field xpath="mstns:BhajanLeaderID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
